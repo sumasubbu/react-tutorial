@@ -5,12 +5,12 @@ class App extends Component {
  render() {
    const characters = [
     {
-      Name: 'Jags',
-      States_of_usefulness: 'useless',
+      Book: 'India Unbound',
+      Author: 'Gurcharan Das',
     },
     {
-      Name: 'Jags',
-      States_of_usefulness: 'occasionally useful',
+      Book: 'Art of War',
+      Author: 'Sun Tzu',
     },
    ]
 
