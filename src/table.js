@@ -1,29 +1,41 @@
 import React , { Component } from 'react'
 
+const TableHeader = () => {
+  return (
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>States_of_usefulness</th>
+      </tr>
+    </thead>
+  )
+}
+
+const TableBody = props => {
+  const rows = props.characterData.map((row,index) => {
+    return (
+      <tr key ={index}>
+        <td>{row.Name}</td>
+        <td>{row.States_of_usefulness}</td>
+      </tr>
+
+    )
+  }
+
+  )
+
+  return <tbody>{rows}</tbody>
+
+}
+
 class Table extends Component {
   render() {
-    return(
+    const { characterData } = this.props
+
+    return (
       <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>States of usefulness</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Jags</td>
-            <td>Useless</td>
-          </tr>
-          <tr>
-            <td>Jags</td>
-            <td>sometimes Useful</td>
-          </tr>
-          <tr>
-            <td>Jags</td>
-            <td>resourceful occasionally</td>
-          </tr>
-        </tbody>
+        <TableHeader/>
+        <TableBody characterData = {characterData} />
       </table>
     )
   }
