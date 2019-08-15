@@ -2,6 +2,7 @@
   "name": "react-tutorial",
   "version": "0.1.0",
   "private": true,
+  "engines" : { "node" : "12.8.0" },
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
