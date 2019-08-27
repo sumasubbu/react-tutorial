@@ -5,7 +5,7 @@ class App extends Component {
  }
 
   componentDidMount() {
-    
+
     const url = 'https://dev-ae-b365-teams-fa.azurewebsites.net/api/SearchEmailFunction'
 
     fetch(url, {
@@ -33,4 +33,4 @@ class App extends Component {
     }
 }
 
-export default App
+// export default App
